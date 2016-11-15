@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Седона</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-menu clearfix">
+      <div  class="main-menu-inf"><a href="#">Информация</a></div>
+      <div class="main-menu-foto"><a href="#">Фото и видео</a></div>
+      <div  class="main-menu-logo"><a href="#" class="small-logo"></a></div>
+      <div class="main-menu-map"><a href="#">Карта штата</a></div>
+      <div class="main-menu-hotel"><a href="#">Гостинницы</a></div>
+    </header>
+    <main>
+      <div class="filter">
+        <form class="filter-form" action="#" method="get">
+          <fieldset class="filter-set">
+          <legend>Инфраструктура:</legend>
+            <div class="filter-field">
+              <input type="checkbox" name="set1" id="set1-field" checked>
+              <label for="set1-field">Бассейн</label>
+            </div>
+            <div class="filter-field">
+              <input type="checkbox" name="set2" id="set2-field">
+              <label for="set2-field">Парковка</label>
+            </div>
+            <div class="filter-field">
+              <input type="checkbox" name="set3" id="set3-field">
+              <label for="set3-field">Wi-Fi</label>
+            </div>
+          </fieldset>
+          <fieldset class="filter-type">
+          <legend>Тип жилья:</legend>
+            <div class="filter-field">
+              <input type="checkbox" name="type1" id="type1-field" checked>
+              <label for="type1-field">Гостиница</label>
+            </div>
+            <div class="filter-field">
+              <input type="checkbox" name="type2" id="type2-field" checked>
+              <label for="type2-field">Мотель</label>
+            </div>
+            <div class="filter-field">
+              <input type="checkbox" name="type3" id="type3-field" checked>
+              <label for="type3-field">Апартаменты</label>
+            </div>
+            <div class="price">
+              <span>Стоимость в сутки (р):</span>
+              <div class="from-to">
+                <span class="from">от 0</span><span class="to">до 3000</span>
+              </div>
+              <div class="slider">
+
+              </div>
+              <input type="submit" name="filter" value="Показать">
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="found1">
+        <div class="sort">
+          <span>Найдено:</span><span>3</span><span>Сортировка:</span><span>По цене</span><span>По типу</span><span>По рейтингу</span>
+        </div>
+        <div class="hotel">
+          <img src="img/foto-amara.jpg" alt="Amara Resort Spa" width="135px" height="90px">
+          <span>Amara Resort & Spa</span>
+          <span>Гостиница</span><span> от 3500 р.</span>
+          <input type="button" name="inf" value="Подробнее">
+          <input type="button" name="reserv" value="Забронировать">
+        </div>
+        <div class="hotel">
+          <img src="img/foto-desert.jpg" alt="Desert Quail Inn" width="135px" height="90px">
+          <span>Desert Quail Inn</span>
+          <span>Мотель</span><span> от 2000 р.</span>
+          <input type="button" name="inf" value="Подробнее">
+          <input type="button" name="reserv" value="Забронировать">
+        </div>
+        <div class="hotel">
+          <img src="img/foto-villas.jpg" alt="Villas at Poco Diablo" width="135px" height="90px">
+          <span>Villas at Poco Diablo</span>
+          <span>Апартаменты</span><span> от 4000 р.</span>
+          <input type="button" name="inf" value="Подробнее">
+          <input type="button" name="reserv" value="Забронировать">
+        </div>
+
+      </div>
+      <div class="found2">
+        <div class="up-down">
+        </div>
+        <div class="rating">
+          <div class="stars">
+          </div>
+          <span>Рейтинг: 8,5</span>
+        </div>
+        <div class="rating">
+          <div class="stars">
+          </div>
+          <span>Рейтинг: 8,9</span>
+        </div>
+        <div class="rating">
+          <div class="stars">
+          </div>
+          <span>Рейтинг: 9,2</span>
+        </div>
+
+      </div>
+
+    </main>
+    <footer>
+      <div><a href="#">#VISITSEDONA</a></div>
+      <div class="icon">
+        <a href="#" class="icon-tw"></a>
+      </div>
+      <div class="icon">
+        <a href="#" class="icon-fb"></a>
+      </div>
+      <div class="icon">
+        <a href="#" class="icon-mv"></a>
+      </div>
+      <div class="html-academy"><a href="#">WEBSITE BY</a>
+      </div>
+
+    </footer>
+  </body>
+</html>
