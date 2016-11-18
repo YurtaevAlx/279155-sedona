@@ -1,6 +1,9 @@
+html {
+  background-color: #6c6c6c
+}
 body {
   min-width: 768px;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: auto;
 
   font-size: 14px;
@@ -8,7 +11,7 @@ body {
   font-family: PTsans;
   text-transform: uppercase;
 
-  background: #516893 url("../img/background.jpg") no-repeat center top;
+  background: #ffffff;
 
 }
 .clearfix::after {
@@ -18,6 +21,9 @@ body {
 }
 .unvisible {
   display: none;
+}
+ul {
+  list-style: none;
 }
 .menu {
   width: 88%;
@@ -31,7 +37,7 @@ body {
   width: 40%;
   padding: 0;
   margin: 0;
-  list-style: none;
+
 }
 
 .menu .menu-item {
@@ -50,6 +56,8 @@ body {
 
 .menu-item a {
   margin: 0 15px;
+  text-decoration: none;
+  color: black;
 }
 
 .main-header .logo {
@@ -58,50 +66,103 @@ body {
   transform: translateX(-50%);
 
 }
-.big-logo {
-  margin: 76px 0 23px 50%;
+.layout-logo {
+  background: url("../img/background.jpg") no-repeat center top, url("../img/background_h2.png") no-repeat center bottom;
+
+
+  /*для сетки*/
+  border: 1px dotted red;
+}
+.layout-logo img {
+  margin: 10% 50%;
   transform: translateX(-50%);
 }
-.layout-h2 {
-  background: url("../img/background_h2.png") no-repeat;
-}
+
 .layout-h2 h2 {
   text-align: center;
   padding: 7% 20% 3% 20%;
 }
 .layout-h2 p {
   text-align: center;
-  padding-bottom: 4%;
+
 }
 
 .motive {
-  background: #ffffff
-
-}
-
-.motive li {
-  position: relative;
-  display: inline-block;
-  width: 30%;
-  height: 330px;
-  text-align: center;
-
-}
-.motive li:nth-child(1),
-.motive li:nth-child(7) {
+  display: table;
   background: #81b3d2;
   color: white;
-  max-height: 256px;
+  margin: 0 3%;
+
+  /*для сетки*/
+  border: 1px dotted black;
+
 
 }
+.motive ul {
+  display: table-row;
+  margin: 0;
+  padding: 0;
+}
+.motive li {
+  display: table-cell;
+  width: 21%;
+  padding: 10% 6%;
+  text-align: center;
 
-.motive-logo {
+  /*для сетки*/
+  border: 1px dotted red;
+}
+.motive h3 {
+  padding: 0;
+  margin: 0;
+}
+
+ .advantage .advantage-item {
+   position: relative;
+   background: #ccc
+
+}
+.advantage .advantage-logo {
   position: absolute;
   top: 60px;
   left: 50%;
   transform: translateX(-50%);
+
 }
 
+
+.search {
+  width: 568px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  text-align: center;
+
+  /*для сетки*/
+  border: 1px dotted red;
+
+}
+.search .search-btn {
+
+  background: #766357;
+  padding: 35px 120px;
+  font-size: 21px;
+  line-height: 26px;
+  color: white;
+}
+.main-footer {
+  display: table;
+  width: 88%;
+  padding: 0 6%;
+
+  /*для сетки*/
+  border: 1px dotted red;
+}
+.main-footer div {
+  display: table-cell;
+  width: 33%;
+  padding: 0 6%;
+}
 .filter {
 background: url("../img/filter-back.jpg") no-repeat;
 padding: 6%;
