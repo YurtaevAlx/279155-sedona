@@ -1,9 +1,360 @@
+html {
+  background-color: #6c6c6c
+}
 body {
-  max-width: 1200px;
+  min-width: 768px;
+  max-width: 1280px;
+  margin: auto;
 
   font-size: 14px;
   line-height: 24px;
   font-family: PTsans;
   text-transform: uppercase;
-  background: #cccccc url("img/background.jpg") no-repeat;
+
+  background: #ffffff;
+
+}
+.clearfix::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+.unvisible {
+  display: none;
+}
+ul {
+  list-style: none;
+}
+.menu {
+  width: 88%;
+  padding: 15px 6%;
+  background: #ffffff
+}
+
+.menu .menu-group {
+  display: table;
+  table-layout: auto;
+  width: 40%;
+  padding: 0;
+  margin: 0;
+
+}
+
+.menu .menu-item {
+  display: table-cell;
+}
+
+.menu .menu-group:first-child {
+  float: left;
+  text-align: left;
+}
+
+.menu .menu-group:last-child {
+  float: right;
+  text-align: right;
+}
+
+.menu-item a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.main-header .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.layout-logo {
+  background: url("../img/background.jpg") no-repeat center top, url("../img/background_h2.png") no-repeat center bottom;
+
+
+  /*для сетки*/
+  border: 1px dotted red;
+}
+.layout-logo img {
+  margin: 10% 50%;
+  transform: translateX(-50%);
+}
+
+.layout-h2 h2 {
+  text-align: center;
+  padding: 7% 20% 3% 20%;
+}
+.layout-h2 p {
+  text-align: center;
+
+}
+
+.motive {
+  display: table;
+  background: #81b3d2;
+  color: white;
+  margin: 0 3%;
+
+  /*для сетки*/
+  border: 1px dotted black;
+
+
+}
+.motive ul {
+  display: table-row;
+  margin: 0;
+  padding: 0;
+}
+.motive li {
+  display: table-cell;
+  width: 21%;
+  padding: 10% 6%;
+  text-align: center;
+
+  /*для сетки*/
+  border: 1px dotted red;
+}
+.motive h3 {
+  padding: 0;
+  margin: 0;
+}
+
+ .advantage .advantage-item {
+   position: relative;
+   background: #ccc
+
+}
+.advantage .advantage-logo {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+
+.search {
+  width: 568px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  text-align: center;
+
+  /*для сетки*/
+  border: 1px dotted red;
+
+}
+.search .search-btn {
+
+  background: #766357;
+  padding: 35px 120px;
+  font-size: 21px;
+  line-height: 26px;
+  color: white;
+}
+.main-footer {
+  display: table;
+  width: 88%;
+  padding: 0 6%;
+
+  /*для сетки*/
+  border: 1px dotted red;
+}
+.main-footer div {
+  display: table-cell;
+  width: 33%;
+  padding: 0 6%;
+}
+.filter {
+background: url("../img/filter-back.jpg") no-repeat;
+padding: 6%;
+}
+
+fieldset {
+  display: inline;
+  width: 20%;
+
+}
+
+.filter-range {
+  float: right;
+  width: 330px;
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+.hotels .hotel {
+  padding: 20px 6%;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.hotels .hotel:first-child {
+  border-top: 2px solid whitesmoke;
+}
+
+.hotels .hotel-photo {
+  float: left;
+  margin-right: 30px;
+}
+
+.hotel-photo img {
+  display: block;
+}
+
+.hotels .hotel-info {
+  float: left;
+}
+
+.hotels .hotel-title {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.hotels .hotel-type,
+.hotels .hotel-price,
+.hotels .btn-more,
+.hotels .btn-booking {
+  float: left;
+  display: block;
+  width: 150px;
+}
+
+.btn-more {
+  clear: left;
+}
+
+.hotels .hotel-rating {
+  float: right;
+}
+
+.hotels .stars,
+.hotels .score {
+  text-align: right;
+  margin-bottom: 20px;
 }
