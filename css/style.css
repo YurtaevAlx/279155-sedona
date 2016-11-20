@@ -1,43 +1,41 @@
 html {
   background-color: #6c6c6c
 }
+
 body {
   min-width: 768px;
-  max-width: 1280px;
-  margin: auto;
-
+  max-width: 1200px;
+  margin: 0 0 0 40px;
+  padding: 0;
   font-size: 14px;
   line-height: 24px;
-  font-family: PTsans;
+  font-family: PT sans;
   text-transform: uppercase;
-
   background: #ffffff;
-
 }
+
 .clearfix::after {
   display: table;
   content: '';
   clear: both;
 }
+
 .unvisible {
   display: none;
 }
-ul {
-  list-style: none;
-}
+
 .menu {
-  width: 88%;
-  padding: 15px 6%;
+  width: 90%;
+  padding: 15px 5%;
   background: #ffffff
 }
 
 .menu .menu-group {
   display: table;
   table-layout: auto;
-  width: 40%;
+  width: 45%;
   padding: 0;
   margin: 0;
-
 }
 
 .menu .menu-item {
@@ -57,77 +55,110 @@ ul {
 .menu-item a {
   margin: 0 15px;
   text-decoration: none;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: PTsans;
+  font-weight: bold;
   color: black;
 }
 
-.main-header .logo {
+.main-header .small-logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-
 }
+
 .layout-logo {
-  background: url("../img/background.jpg") no-repeat center top, url("../img/background_h2.png") no-repeat center bottom;
-
-
-  /*для сетки*/
-  border: 1px dotted red;
+  background: url("../img/background_h2.png") no-repeat center bottom, url("../img/background.jpg") no-repeat center -56px;
 }
+
 .layout-logo img {
-  margin: 10% 50%;
+  margin: 75px 50%;
   transform: translateX(-50%);
 }
 
-.layout-h2 h2 {
+.layout-h2 {
+  margin: 0;
   text-align: center;
-  padding: 7% 20% 3% 20%;
+  padding: 0 300px;
+  transform: translateX(30px);
 }
-.layout-h2 p {
-  text-align: center;
 
+.layout-h2 h2 {
+  padding: 40px 0 12px 0;
+  line-height: 26px;
+  font-size: 21px;
+}
+
+.layout-h2 p {
+  padding-bottom: 40px;
 }
 
 .motive {
   display: table;
-  background: #81b3d2;
-  color: white;
-  margin: 0 3%;
+  margin: auto;
+  padding: 0;
+}
 
-  /*для сетки*/
-  border: 1px dotted black;
-
+.motive h3 {
+  padding: 15px 100px 0 140px;
+  line-height: 21px;
+  font-size: 21px;
 
 }
+
+.motive p {
+  padding: 5px 50px 25px 50px;
+
+  line-height: 21px;
+
+}
+.motive-num {
+  padding: 0;
+
+}
+
 .motive ul {
   display: table-row;
-  margin: 0;
-  padding: 0;
-}
-.motive li {
-  display: table-cell;
-  width: 21%;
-  padding: 10% 6%;
-  text-align: center;
 
-  /*для сетки*/
-  border: 1px dotted red;
 }
-.motive h3 {
-  padding: 0;
-  margin: 0;
+.motive .motive-item {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+
 }
 
  .advantage .advantage-item {
    position: relative;
-   background: #ccc
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+   padding: 120px 0 40px 0;
 
 }
 .advantage .advantage-logo {
   position: absolute;
-  top: 60px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
 
+}
+
+.advantage p {
+  padding-top: 5px;
+
+}
+
+.motive1 img,
+.motive2 img {
+  display: block;
+
+}
+
+.motive1 li:first-child,
+.motive2 li:last-child {
+  background: #81b3d2;
 }
 
 
