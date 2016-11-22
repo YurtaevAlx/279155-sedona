@@ -1,15 +1,16 @@
 html {
+  padding: 0 3%;
   background-color: #6c6c6c
 }
 
 body {
   min-width: 768px;
   max-width: 1200px;
-  margin: 0 0 0 40px;
+  margin: 0;
   padding: 0;
   font-size: 14px;
   line-height: 24px;
-  font-family: PT sans;
+  font-family: "PT sans";
   text-transform: uppercase;
   background: #ffffff;
 }
@@ -25,8 +26,8 @@ body {
 }
 
 .menu {
-  width: 90%;
-  padding: 15px 5%;
+  width: 92%;
+  padding: 14px 4% 15px 4%;
   background: #ffffff
 }
 
@@ -53,11 +54,11 @@ body {
 }
 
 .menu-item a {
-  margin: 0 15px;
+  margin: 0 22px;
   text-decoration: none;
   font-size: 14px;
   line-height: 26px;
-  font-family: PTsans;
+  font-family: PT sans;
   font-weight: bold;
   color: black;
 }
@@ -73,7 +74,7 @@ body {
 }
 
 .layout-logo img {
-  margin: 75px 50%;
+  margin: 76px 50%;
   transform: translateX(-50%);
 }
 
@@ -85,13 +86,15 @@ body {
 }
 
 .layout-h2 h2 {
-  padding: 40px 0 12px 0;
+  padding: 41px 63px 11px 0;
   line-height: 26px;
   font-size: 21px;
+  font-family: PT sans;
+  font-weight: bold;
 }
 
 .layout-h2 p {
-  padding-bottom: 40px;
+  padding: 0 63px 40px 0;
 }
 
 .motive {
@@ -100,100 +103,325 @@ body {
   padding: 0;
 }
 
+.motive ul {
+  display: table-row;
+
+}
+
+.motive li {
+  display: table-cell;
+}
+
+.motive .motive-item {
+  text-align: center;
+  vertical-align: middle;
+
+}
+
 .motive h3 {
-  padding: 15px 100px 0 140px;
+  padding: 0 120px;
   line-height: 21px;
   font-size: 21px;
 
 }
 
 .motive p {
-  padding: 5px 50px 25px 50px;
-
+  padding: 0 45px;
   line-height: 21px;
 
 }
+
 .motive-num {
-  padding: 0;
-
+  position: relative;
+  padding: 0 15px;
 }
 
-.motive ul {
-  display: table-row;
+.motive-num::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+
+  width: 9px;
+  height: 2px;
+
+  background-color: #ccc;
+}
+
+.motive-num::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 9px;
+  height: 2px;
+  background-color: #ccc;
+}
+
+.motive1 img,
+.motive2 img {
+  display: block;
+  object-fit: scale-down;
 
 }
-.motive .motive-item {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-
+.motive1 h3,
+.motive2 h3 {
+  padding-top: 32px;
 }
 
- .advantage .advantage-item {
+.motive1 p,
+.motive2 p {
+  padding-top: 5px;
+  padding-bottom: 40px;
+}
+
+.motive1 li:first-child,
+.motive2 li:last-child {
+  background: #81b3d2;
+  color: white;
+}
+
+.advantage .advantage-item {
    position: relative;
    display: table-cell;
    text-align: center;
    vertical-align: middle;
-   padding: 120px 0 40px 0;
+   padding: 138px 0 70px 0;
 
 }
+
 .advantage .advantage-logo {
   position: absolute;
-  top: 50px;
+  top: 60px;
   left: 50%;
   transform: translateX(-50%);
 
 }
 
 .advantage p {
-  padding-top: 5px;
+  padding: 3px 47px 0 47px;
 
 }
 
-.motive1 img,
-.motive2 img {
-  display: block;
+.motive-group li {
+  padding: 24px 0;
 
 }
 
-.motive1 li:first-child,
-.motive2 li:last-child {
-  background: #81b3d2;
+.motive-group h3 {
+  padding: 0 135px 1px 120px;
+
 }
 
+.motive-group .motive-num {
+  margin-right: 15px;
+
+}
+
+.motive-group .motive-num::before,
+.motive-group .motive-num::after {
+  background: black;
+}
+
+.motive-group p {
+  padding: 6px 65px 20px 68px;
+}
 
 .search {
   width: 568px;
-  margin-left: 50%;
+  margin: 0 0 0 50%;
   transform: translateX(-50%);
   padding: 0;
   text-align: center;
 
-  /*для сетки*/
-  border: 1px dotted red;
+}
+
+.search h3 {
+  padding-top: 27px;
+  font-size: 30px;
+  line-height: 24px;
 
 }
-.search .search-btn {
 
+.search p {
+  padding-bottom: 33px;
+}
+
+.search .search-btn {
   background: #766357;
-  padding: 35px 120px;
+  padding: 30px 120px;
   font-size: 21px;
   line-height: 26px;
+  margin: 0;
   color: white;
 }
+
+.search-form {
+  position: relative;
+  /*display: none;
+
+}
+
+.search-btn:hover .search-form {
+  display: block;*/
+}
+
+.search-date-in {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  padding: 62px 0 0 58px;
+}
+
+.search-date-out {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  padding: 43px 0 0 57px;
+}
+
+.search-date-in input,
+.search-date-out input {
+  width: 300px;
+  margin-left: 10px;
+  padding-left: 10px;
+
+}
+
+.search-date-in::after {
+  content: "";
+  position: absolute;
+  right: 64px;
+  top: 64px;
+  width: 21px;
+  height: 22px;
+  background: url("../img/calendar.png") no-repeat;
+}
+.search-date-out::after {
+  content: "";
+  position: absolute;
+  right: 64px;
+  top: 131px;
+  width: 21px;
+  height: 22px;
+  background: url("../img/calendar.png") no-repeat;
+}
+
+.search-adult,
+.search-child {
+  display: inline-block;
+  font-weight: bold;
+  margin: 44px 50px;
+
+}
+
+.search-adult input,
+.search-child input {
+  position: relative;
+  display: inline-block;
+  width: 65px;
+  margin: 0 20px;
+  text-align: center;
+
+}
+
+.search-form-btn {
+  display: block;
+  width: 458px;
+  height: 58px;
+  text-align: center;
+  background: #81b3d2;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PT Sans";
+  border: none;
+  outline: none;
+
+  margin: 18px 55px 55px 55px;
+
+}
+
+.search-form-btn:hover {
+  background: #669ec0;
+
+}
+
 .main-footer {
   display: table;
   width: 88%;
   padding: 0 6%;
-
-  /*для сетки*/
-  border: 1px dotted red;
 }
+
 .main-footer div {
   display: table-cell;
   width: 33%;
-  padding: 0 6%;
+  padding: 30px 3%;
+
 }
+
+.footer-index {
+
+  vertical-align: middle;
+
+}
+
+.footer-index a {
+  text-decoration: none;
+  line-height: 26px;
+  font-size: 21px;
+  color: black;
+
+}
+.footer-social {
+  text-align: center;
+  vertical-align: top;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  font-size: 0;
+
+}
+.social-btn-tw {
+  background: #81b3d2 url("../img/twit.png") no-repeat center center;
+}
+.social-btn-fb {
+  background: #81b3d2 url("../img/fb.png") no-repeat center center;
+}
+.social-btn-move {
+  background: #81b3d2 url("../img/move.png") no-repeat center center;
+}
+.social-btn-tw:hover {
+  background: #669ec0 url("../img/twit.png") no-repeat center center;
+}
+.social-btn-fb:hover {
+  background: #669ec0 url("../img/fb.png") no-repeat center center;
+}
+.social-btn-move:hover {
+  background: #669ec0 url("../img/move.png") no-repeat center center;
+}
+
+.footer-copyright {
+  text-align: right;
+  vertical-align: middle;
+}
+.footer-copyright a {
+  display: inline-block;
+  width: 195px;
+  height: 39px;
+  font-size: 0;
+  background: url("../img/html_academy.png") no-repeat;
+}
+.footer-copyright a:hover {
+  background: url("../img/html_academy-hvr.png") no-repeat;
+}
+
 .filter {
 background: url("../img/filter-back.jpg") no-repeat;
 padding: 6%;

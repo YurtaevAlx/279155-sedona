@@ -42,7 +42,7 @@
           <li class="motive-item">
             <h3>Настоящий городок</h3>
             <span class="motive-num">№1</span>
-            <p>СЕДОНА - не аттракцион для туристов, там течет своя жизнь</p>
+            <p>СЕДОНА - не аттракцион для туристов,<br>там течет своя жизнь</p>
           </li>
           <li class="motive-item">
             <img src="img/foto1.jpg" width="800" height="256" alt="Open Range">
@@ -74,7 +74,7 @@
             <img src="img/foto2.jpg" width="800" height="256" alt="Devil's bridge">
           </li>
           <li class="motive-item">
-            <h3>Там есть Мост дьявола</h3>
+            <h3>Там есть<br>Мост дьявола</h3>
             <span class="motive-num">№2</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </li>
@@ -105,15 +105,23 @@
         <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в СЕДОНЕ</p>
         <p class="search-btn">Поиск гостиницы в СЕДОНЕ</p>
         <form class="search-form" action="index.html" method="post">
-        <label for="date-in">Дата заезда:</label>
-        <input type="date" name="date-in">
-        <label for="date-out">Дата выезда:</label>
-        <input type="date" name="date-out">
-        <label for="adult">Взрослые:</label>
-        <input type="number" name="adult">
-        <label for="child">Дети:</label>
-        <input type="number" name="child">
-        <input type="submit" name="search-hotel" value="Найти">
+          <div class="search-date-in">
+            <label for="date-in">Дата заезда:</label>
+            <input type="date" name="date-in">
+          </div>
+          <div class="search-date-out">
+            <label for="date-out">Дата выезда:</label>
+            <input type="date" name="date-out">
+          </div>
+          <div class="search-adult">
+            <label for="adult">Взрослые:</label>
+            <input type="number" name="adult">
+          </div>
+          <div class="search-child">
+            <label for="child">Дети:</label>
+            <input type="number" name="child">
+          </div>
+        <input class="search-form-btn" type="submit" name="search-hotel" value="Найти">
       </form>
     </div>
       <img src="img/map.jpg" width="1200" height="593" alt="Map" />
@@ -130,8 +138,7 @@
         </div>
         <div class="footer-copyright">
           <p class="unvisible">Разработано:</p>
-          <a href="https://htmlacademy.ru">
-            <img src="img/html_academy.png" width="195" height="39"  alt="HTML Academy" /></a>
+          <a href="https://htmlacademy.ru">HTML Academy</a>
         </div>
 
     </footer>
