@@ -1,13 +1,11 @@
 html {
-  padding: 0 3%;
   background-color: #6c6c6c
 }
 
 body {
   min-width: 768px;
   max-width: 1200px;
-  margin: 0;
-  padding: 0;
+  margin: auto;
   font-size: 14px;
   line-height: 24px;
   font-family: "PT sans";
@@ -79,33 +77,27 @@ body {
 }
 
 .layout-h2 {
-  margin: 0;
   text-align: center;
-  padding: 0 300px;
-  transform: translateX(30px);
 }
 
 .layout-h2 h2 {
-  padding: 41px 63px 11px 0;
   line-height: 26px;
   font-size: 21px;
-  font-family: PT sans;
   font-weight: bold;
+  padding: 3.3% 30% 0 30%;
 }
 
 .layout-h2 p {
-  padding: 0 63px 40px 0;
+  padding: 1% 0 3.2% 0;
 }
 
 .motive {
   display: table;
-  margin: auto;
-  padding: 0;
+  width: 100%;
 }
 
 .motive ul {
   display: table-row;
-
 }
 
 .motive li {
@@ -115,25 +107,46 @@ body {
 .motive .motive-item {
   text-align: center;
   vertical-align: middle;
-
 }
 
 .motive h3 {
-  padding: 0 120px;
   line-height: 21px;
   font-size: 21px;
-
 }
 
 .motive p {
-  padding: 0 45px;
   line-height: 21px;
+}
 
+.motive1 img,
+.motive2 img {
+  display: block;
+  width: 100%;
+  object-fit: none;
+}
+
+.motive1 h3,
+.motive2 h3 {
+  margin: 0 23%;
+  margin-bottom: 20px;
+  padding-top: 4%;
+}
+
+.motive1 p,
+.motive2 p {
+  margin-top: 20px;
+}
+
+.motive1 li:first-child,
+.motive2 li:last-child {
+  width: 33.34%;
+  background: #81b3d2;
+  color: white;
 }
 
 .motive-num {
   position: relative;
-  padding: 0 15px;
+  padding: 0 4%;
 }
 
 .motive-num::after {
@@ -141,11 +154,9 @@ body {
   position: absolute;
   top: 10px;
   right: 0;
-
   width: 9px;
   height: 2px;
-
-  background-color: #ccc;
+  background-color: white;
 }
 
 .motive-num::before {
@@ -155,39 +166,20 @@ body {
   top: 10px;
   width: 9px;
   height: 2px;
-  background-color: #ccc;
-}
-
-.motive1 img,
-.motive2 img {
-  display: block;
-  object-fit: scale-down;
-
-}
-.motive1 h3,
-.motive2 h3 {
-  padding-top: 32px;
-}
-
-.motive1 p,
-.motive2 p {
-  padding-top: 5px;
-  padding-bottom: 40px;
-}
-
-.motive1 li:first-child,
-.motive2 li:last-child {
-  background: #81b3d2;
-  color: white;
+  background-color: white;
 }
 
 .advantage .advantage-item {
    position: relative;
    display: table-cell;
+   width: 33.33%;
    text-align: center;
    vertical-align: middle;
-   padding: 138px 0 70px 0;
+   padding: 11.6% 0 5.9% 0;
+}
 
+.advantage p {
+  padding: 0 12%;
 }
 
 .advantage .advantage-logo {
@@ -195,27 +187,19 @@ body {
   top: 60px;
   left: 50%;
   transform: translateX(-50%);
-
 }
 
-.advantage p {
-  padding: 3px 47px 0 47px;
-
-}
 
 .motive-group li {
-  padding: 24px 0;
-
+  width: 33.33%;
 }
 
 .motive-group h3 {
-  padding: 0 135px 1px 120px;
-
+  padding: 6.6% 30% 0 30%;
 }
 
-.motive-group .motive-num {
-  margin-right: 15px;
-
+.motive-group p {
+  padding: 1.5% 15%;
 }
 
 .motive-group .motive-num::before,
@@ -223,28 +207,22 @@ body {
   background: black;
 }
 
-.motive-group p {
-  padding: 6px 65px 20px 68px;
-}
-
 .search {
   width: 568px;
-  margin: 0 0 0 50%;
+  margin: 0 50%;
   transform: translateX(-50%);
   padding: 0;
   text-align: center;
-
 }
 
 .search h3 {
-  padding-top: 27px;
+  padding-top: 11.6%;
   font-size: 30px;
   line-height: 24px;
-
 }
 
 .search p {
-  padding-bottom: 33px;
+  padding-bottom: 5.6%;
 }
 
 .search .search-btn {
@@ -252,32 +230,51 @@ body {
   padding: 30px 120px;
   font-size: 21px;
   line-height: 26px;
+  font-weight: bold;
   margin: 0;
   color: white;
 }
 
 .search-form {
   position: relative;
-  /*display: none;
-
-}
-
-.search-btn:hover .search-form {
-  display: block;*/
+  padding-left: 56px;
+  padding-bottom: 53px;
 }
 
 .search-date-in {
   display: block;
   text-align: left;
   font-weight: bold;
-  padding: 62px 0 0 58px;
+  padding-top: 63px;
 }
 
 .search-date-out {
   display: block;
   text-align: left;
   font-weight: bold;
-  padding: 43px 0 0 57px;
+  padding: 38px 0 40px 0;
+}
+
+.search-date-in button,
+.search-date-out button {
+  display: inline;
+  width: 21px;
+  height: 22px;
+  margin: 0 0 0 8px;
+  background: url("../img/calendar.png") no-repeat center top;
+  transform: translateY(-6px);
+}
+
+.search-date-in button:hover,
+.search-date-out button:hover {
+  background: url("../img/calendar-hvr.png") no-repeat center top;
+}
+
+.search-date-out {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+
 }
 
 .search-date-in input,
@@ -285,44 +282,51 @@ body {
   width: 300px;
   margin-left: 10px;
   padding-left: 10px;
-
+  border: none;
 }
 
-.search-date-in::after {
-  content: "";
-  position: absolute;
-  right: 64px;
-  top: 64px;
-  width: 21px;
-  height: 22px;
-  background: url("../img/calendar.png") no-repeat;
-}
-.search-date-out::after {
-  content: "";
-  position: absolute;
-  right: 64px;
-  top: 131px;
-  width: 21px;
-  height: 22px;
-  background: url("../img/calendar.png") no-repeat;
-}
-
-.search-adult,
-.search-child {
-  display: inline-block;
+.search-adult {
+  float: left;
   font-weight: bold;
-  margin: 44px 50px;
-
+  padding-bottom: 60px;
+  vertical-align: top;
 }
+
+.search-adult label {
+  margin-right: 40px;
+}
+
+.search-child {
+  float: right;
+  font-weight: bold;
+  margin-right: 57px;
+}
+
+.search-child label {
+  margin-right: 30px;
+}
+
 
 .search-adult input,
 .search-child input {
-  position: relative;
-  display: inline-block;
-  width: 65px;
-  margin: 0 20px;
+  width: 34px;
+  margin: 0 5px;
   text-align: center;
+  border: none;
+}
 
+.search-adult button,
+.search-child button {
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: bold;
+  border: none;
+  color: #a9a9a9;
+}
+
+.search-adult button:hover,
+.search-child button:hover {
+  color: black;
 }
 
 .search-form-btn {
@@ -339,15 +343,10 @@ body {
   line-height: 26px;
   font-family: "PT Sans";
   border: none;
-  outline: none;
-
-  margin: 18px 55px 55px 55px;
-
 }
 
 .search-form-btn:hover {
   background: #669ec0;
-
 }
 
 .main-footer {
@@ -360,7 +359,6 @@ body {
   display: table-cell;
   width: 33%;
   padding: 30px 3%;
-
 }
 
 .footer-index {
